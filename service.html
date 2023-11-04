@@ -1,0 +1,298 @@
+<style>
+    @media screen and (max-width:450px) {
+        .mainTxt02{
+            font-size: 20px !important;
+        }
+        .mainTxt03{
+            font-size: 20px !important;
+        }
+        .subTxt01{
+            font-size: 14px !important;
+            word-break: keep-all;
+        }
+        .subImg01{
+            max-width: 220px !important;
+            max-height: 38px !important;
+        }
+        .subTxt02{
+            font-size: 24px !important;
+        }
+        .subBtn{
+            max-width: 302px !important;
+        }
+        .subBtnTxt{
+            font-size: 22px !important;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            max-width: 20px !important;
+            max-height: 20px !important;
+        }
+        .slideTxt{
+            font-size: 18px !important;
+        }
+        .slideImg01, .slideImg02{
+            max-height: 300px;
+        }
+    }
+
+    /* main */
+    .mainImgBox {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 380px;
+        display: flex;
+    }
+
+    .mainImg {
+        background: url("https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/03_mainPhoto.png") no-repeat center center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .mainTxtBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 308px;
+        min-width: 131px;
+        height: auto;
+        margin: auto 20%;
+    }
+
+    .mainTxt01 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.05em;
+        text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .mainTxt02 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: -0.05em;
+        text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .mainTxt03 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: -0.05em;
+        text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .subImg01 {
+        background: url("https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/03_txt01.svg") no-repeat center center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        max-width: 320px;
+        max-height: 57px;
+    }
+
+    .subTxt01 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.05em;
+        color: #5B5B5B;
+        text-align: center;
+    }
+
+    .subBox01 {
+        width: 100%;
+        max-width: 1920px;
+        height: auto;
+        max-height: 252px;
+        background-color: #f9f9f9;
+    }
+
+    .subTxt02 {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.05em;
+        color: #007CC1;
+    }
+
+    .subBtn {
+        background: linear-gradient(270.81deg, rgba(49, 230, 255, 0.2) 17.2%, rgba(82, 234, 255, 0) 77.01%), #007CC1;
+        border-radius: 100px;
+        width: 100%;
+        max-width: 602px;
+        height: auto;
+        max-height: 70px;
+    }
+
+    .subA, .subA:hover{
+        width: 100%;
+        cursor: pointer;
+        text-decoration-line: none;
+    }
+
+    .subBtnTxt {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.05em;
+        color: #FFFFFF;
+    }
+
+    .slideTxt{
+        color: #007CC1;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.05em;
+        width: 100%;
+        max-width: 1400px;
+        margin: auto;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    /* slide */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slideBox01 {
+        width: 94%;
+        max-width: 1440px;
+        height: 100%;
+        max-height: 322px;
+        padding: 0 6%;
+    }
+
+    .slideBox02 {
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+        max-height: 322px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        opacity: 1;
+        overflow: visible;
+    }
+
+    .carousel-control-prev-icon {
+        background: url(https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/01_left.svg) no-repeat 50%/100% 100% !important;
+        background-size: cover !important;
+        width: 40px !important;
+        height: 40px !important;
+        text-align: center !important;
+    }
+
+    .carousel-control-next-icon {
+        background: url(https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/01_right.svg) no-repeat 50%/100% 100% !important;
+        background-size: cover !important;
+        width: 40px !important;
+        height: 40px !important;
+        text-align: center !important;
+    }
+
+    .slideBox03{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .slideImg01{
+        background: url("https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/03_photo01.png") no-repeat center center;
+        background-size: contain;
+        width: 100vw;
+        max-width: 1200px;
+        height: 90vh;
+    }
+    .slideImg02{
+        background: url("https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/03_photo02.png") no-repeat center center;
+        background-size: contain;
+        width: 100vw;
+        max-width: 1200px;
+        height: 90vh;
+    }
+</style>
+
+
+
+<div class="mainImgBox mainImg hp_mAuto">
+    <div class="mainTxtBox">
+        <div class="mainTxt01">구독서비스</div>
+        <div class="mainTxt02 hp_pt30">이제 프리미엄 전기자전거도</div>
+        <div class="mainTxt03 hp_pt10">구독서비스로 이용해보세요!</div>
+    </div>
+</div>
+
+<div class="hp_pt100 hp_pb80 hp_p4p m_pt40 m_pb40">
+    <div class="subTxt01">클래식한 디자인과 엄청난 퍼포먼스의 <strong>프리미엄 전기자전거,</strong> 혹시 가격 때문에 <strong>부담스러우셨나요?</strong></div>
+    <div class="subTxt01 hp_pt30 hp_pb20 m_pt15"><strong>저렴한 가격으로</strong> 프리미엄 전기자전거를 이용할 수 있는 기회,</div>
+    <div class="subImg01 hp_mAuto"></div>
+
+    <div class="hp_mAuto hp_pd30 hp_pb20 hp_pt100 text-center">
+        <img src="https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/commingsoon.png">
+    </div>
+
+</div>
+
+
+<!--
+<div class="subBox01 hp_mAuto hp_txtCen">
+    <div class="subTxt02 hp_mAuto hp_pt60 hp_pb26">1개월 구독료 <strong>150,000원에 시작하세요.</strong></div>
+    <div class="hp_pb60">
+        <div class="subBtn hp_mAuto">
+            <a href="#" class="subA">
+                <div class="subBtnTxt hp_pt20 hp_pb20">지금 구독하기</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="slideTxt hp_pb30 hp_pt50">상품 정보</div>
+
+<div class="slideBox01 hp_mAuto">
+    <div class="slideBox02 hp_mAuto">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/03_slide01.png" alt="Los Angeles" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/03_slide02.png" alt="Chicago" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/03_slide03.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/03_slide04.png" alt="New York" width="1100" height="500">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev" style="left: -11%;">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next" style="right: -11%;">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="slideTxt hp_pb30 hp_pt50">상세 정보</div>
+
+<div class="slideBox03 hp_pb30">
+    <div class="slideImg01"></div>
+</div>
+<div class="slideBox03">
+    <div class="slideImg02"></div>
+</div>
+-->
+<div class="hp_pb100"></div>
