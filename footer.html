@@ -1,0 +1,239 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="https://wheelwego.s3.ap-northeast-2.amazonaws.com/common.css">
+
+<style>
+        @media screen and (max-width:480px) {
+            .boxImg01{
+                width: 100px !important;
+                height: 70px !important;
+            }
+            .boxTxt01{
+                font-size: 25px !important;
+                padding-bottom: 6px !important;
+            }
+            .boxTxt02{
+                font-size: 25px !important;
+                padding-bottom: 20px !important;
+            }
+            .subBoxTxt01{
+                font-size: 25px !important;
+                text-align: center;
+            }
+            .subBoxTxt02{
+                font-size: 15px !important;
+                text-align: center;
+                word-break: keep-all;
+            }
+            .carousel-control-prev-icon, .carousel-control-next-icon {
+                max-width: 20px !important;
+                max-height: 20px !important;
+            }
+            .m_FlexD_col{
+                flex-direction: column;
+            }
+            .footerBL{
+                border-left: 0 !important;
+            }
+
+            .hid_mn{
+                width: 65px!important;                
+            }
+        }
+
+     
+
+        .mainImgBox02 {
+            width: 100%;
+/*             max-width: 409px; */
+            height: auto;
+/*             max-height: 394px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .boxImg01 {
+            background: url("https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/01_bicycle.svg") no-repeat center center;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            max-width: 176px;
+            max-height: 126px;
+        }
+
+        .boxImg02 {
+            background: url("https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/01_arrow.svg") no-repeat center center;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            max-width: 20px;
+            max-height: 24px;
+        }
+
+        .boxTxt01 {
+            color: #fff;
+            text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+            font-weight: 700;
+            font-size: 45px;
+            letter-spacing: -0.05em;
+        }
+
+        .boxTxt02 {
+            color: #fff;
+            text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+            font-weight: 400;
+            font-size: 45px;
+            letter-spacing: -0.05em;
+        }
+
+        .subBox {
+            width: 100%;
+            /* max-width: 1200px; */
+            max-width: 1380px;
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+
+        .subBoxTxt01 {
+            color: #007CC1;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+        }
+
+        .subBoxTxt02 {
+            color: #5B5B5B;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: -0.05em;
+            line-height: 24px;
+        }
+
+        /* slide */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slideBox01 {
+            width: 94%;
+            max-width: 1440px;
+            height: 100%;
+            max-height: 322px;
+            padding: 0 6%;
+        }
+
+        .slideBox02 {
+            width: 100%;
+            max-width: 1200px;
+            height: 100%;
+            max-height: 322px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            opacity: 1;
+            overflow: visible;
+        }
+
+        .carousel-control-prev-icon {
+            background: url(https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/01_left.svg) no-repeat 50%/100% 100% !important;
+            background-size: cover !important;
+            width: 40px !important;
+            height: 40px !important;
+            text-align: center !important;
+        }
+
+        .carousel-control-next-icon {
+            background: url(https://wheelwego.s3.ap-northeast-2.amazonaws.com/images/01_right.svg) no-repeat 50%/100% 100% !important;
+            background-size: cover !important;
+            width: 40px !important;
+            height: 40px !important;
+            text-align: center !important;
+        }
+
+        .awhite {
+            color : white !important;
+        }
+
+    
+    </style>
+
+    <!-- footer -->
+    <div class="footerBox hp_mAuto hp_p6p">
+        <div class="logoImg"></div>
+        <div class="hp_dFlex hp_pt30">
+            <div class="footerTxt01 hp_pr20"><a href="/" class="hp_txtD_none">홈</a></div>
+            <div class="footerTxt01 hp_pr20"><a href="/page/?M2_IDX=27217" class="hp_txtD_none">회사소개</a></div>
+            <div class="footerTxt01"><a href="/page/?M2_IDX=27261" class="hp_txtD_none">개인정보취급방침</a></div>
+        </div>
+        <div class="hp_dFlex hp_pt30 hp_flexWrap m_FlexD_col">
+            <div class="footerTxt01 hp_pr10">법인명</div>
+            <div class="footerTxt02 hp_pr20">매드퓨처</div>
+            <div class="footerBL hp_pr20"></div>
+            <div class="footerTxt01 hp_pr10">대표자</div>
+            <div class="footerTxt02 hp_pr20">김준호,노승은</div>
+            <div class="footerBL hp_pr20"></div>
+            <div class="footerTxt01 hp_pr10">사업자등록번호</div>
+            <div class="footerTxt02 hp_pr20">306-13-50387</div>
+            <div class="footerBL hp_pr20"></div>
+            <div class="footerTxt01 hp_pr10">전화번호</div>
+            <div class="footerTxt02 hp_pr20">0507-1354-1860</div>
+            <div class="footerBL hp_pr20"></div>
+            <div class="footerTxt01 hp_pr10">통신판매업신고번호</div>
+            <div class="footerTxt02 hp_pr20">2020-경기군포-0400</div>
+        </div>
+        <div class="hp_dFlex hp_pt10 hp_flexWrap">
+            <div class="footerTxt01 hp_pr10">주소</div>
+            <div class="footerTxt02 hp_pr20">경기도 군포시 군포첨단산업 2로 22번길 5, #606</div>
+        </div>
+        <div class="hp_dFlex hp_pt10 hp_flexWrap">
+            <div class="footerTxt01 hp_pr10">개인정보관리책임자</div>
+            <div class="footerTxt02 hp_pr20">노승은(madfuture231@naver.com) Contact for more information.</div>
+        </div>
+        <div class="hp_dFlex hp_pt30 footerTxt02">Copyright 2002 매드퓨처 All Rights Reserved</div>
+    </div>
+
+    <script>
+    $(()=>{
+        if($(window).width() > 750){
+            //상단폰트크기
+            $('.gnb_wrap2 a').css({fontSize : 16});
+            //상단로고 주저앉히기        
+            $('.header_typeA .h_logo').css({padding : '0 0 0 22px'});
+        }
+
+        //좌우간격
+        if(/27248|27220|coupon|point|sett|regular|memb|pw|cons|pay|coun.list|order.temp|order.add/i.test(location.href)){
+            let width = $(window).width();
+            if(width > 750){
+                $('.content_wrap1').css({width: 1200, margin : '0 auto'});
+            }else{
+                $('.content_wrap1').css({width: width-10, margin : '10px 0'})
+                $('.map_wrap').css({width : this.innerWidth});
+            }
+        }
+        
+        //각종 기본화면들 링크버튼 적음
+        if(/coupon|point|sett|regular|memb|pw|cons|pay|coun.list|order.temp|order.add|shop/i.test(location.href)){
+            $('a.btn-search').addClass('awhite');
+            $('.pagenate a').addClass('awhite');
+            $('.member-content a').addClass('awhite');
+            $('.prd-summary a').addClass('awhite');
+        }
+
+        
+
+
+    })       
+
+    </script>
